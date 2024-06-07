@@ -2,13 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Push to Docker Hub](https://github.com/joshuasundance-swca/postgis_pgvector/actions/workflows/docker-hub.yml/badge.svg)](https://github.com/joshuasundance-swca/postgis_pgvector/actions/workflows/docker-hub.yml)
-[![postgis_pgvector on Docker Hub](https://img.shields.io/docker/v/joshuasundance/postgis_pgvector?label=postgis_pgvector&logo=docker)](https://hub.docker.com/r/joshuasundance/postgis_pgvector)
-[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/joshuasundance/postgis_pgvector/latest)](https://hub.docker.com/r/joshuasundance/postgis_pgvector)
+[![Push to GHCR](https://github.com/spykesocial/postgis_pgvector/actions/workflows/docker-ghcr.yml/badge.svg)](https://github.com/spykesocial/postgis_pgvector/actions/workflows/docker-ghcr.yml)
 
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-![Known Vulnerabilities](https://snyk.io/test/github/joshuasundance-swca/postgis_pgvector/badge.svg)
-
+![Known Vulnerabilities](https://snyk.io/test/github/spykesocial/postgis_pgvector/badge.svg)
 
 🤖 This `README` was written by GPT-4. 🤖
 
@@ -21,7 +17,7 @@ This project focuses on creating a Docker image that combines the functionalitie
 
 
 ### Dockerfile
-The `Dockerfile` starts with the `postgis/postgis:13-3.4` image and installs essential packages including build tools, PostgreSQL server development tools, and `git`. It then clones and installs pgvector. The Dockerfile is optimized to reduce the layer size by cleaning up after installations.
+The `Dockerfile` starts with the `postgis/postgis:16-3.4` image and installs essential packages including build tools, PostgreSQL server development tools, and `git`. It then clones and installs `pgvector`. The Dockerfile is optimized to reduce the layer size by cleaning up after installations.
 
 ### docker-compose.yml
 `docker-compose.yml` sets up two services:

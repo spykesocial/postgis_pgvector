@@ -1,3 +1,4 @@
+# org.opencontainers.image.source = "https://github.com/spykesocial/postgis_pgvector"
 # Use the PostGIS image as the base
 FROM postgis/postgis:16-3.4
 
@@ -11,7 +12,7 @@ RUN apt-get update \
   postgresql-server-dev-16 \
   # Clean up to reduce layer size
   && rm -rf /var/lib/apt/lists/* \
-  && git clone --branch v0.7.0 https://github.com/pgvector/pgvector.git /tmp/pgvector \
+  && git clone --branch v0.7.1 https://github.com/pgvector/pgvector.git /tmp/pgvector \
   && cd /tmp/pgvector \
   && make \
   && make install \

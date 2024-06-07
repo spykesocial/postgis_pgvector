@@ -11,7 +11,5 @@ tag = true
 push = true
 
 [bumpver.file_patterns]
-"bumpver.toml" = [
-    'current_version = "{version}"',
-]
-"docker-compose.yml" = ["#    image: joshuasundance/postgis_pgvector:{version}"]
+"bumpver.toml" = ['current_version = "{version}"']
+"docker-compose.yml" = ["#    image: spykesocial/postgis_pgvector:{version}"]
